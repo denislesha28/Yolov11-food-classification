@@ -1,0 +1,31 @@
+apple
+banana
+bottle
+bowl
+bread
+broccoli
+cake
+carrot
+cup
+dining table
+donut
+fork
+glass
+hot dog
+knife
+meat_platter
+napkin
+orange
+person
+pizza
+plate
+salad
+sandwich
+sauce bowl
+smartphone
+soup
+spoon
+tea_pot
+wine glass
+clock
+scissors

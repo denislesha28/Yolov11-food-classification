@@ -1,0 +1,6 @@
+dataset
+src/preprocessing/label_studio_data/*
+assignment.md
+poetry.lock
+runs
+.venv

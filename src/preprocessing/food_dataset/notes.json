@@ -1,0 +1,89 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "bowl"
+    },
+    {
+      "id": 1,
+      "name": "bread"
+    },
+    {
+      "id": 2,
+      "name": "cup"
+    },
+    {
+      "id": 3,
+      "name": "fork"
+    },
+    {
+      "id": 4,
+      "name": "glass"
+    },
+    {
+      "id": 5,
+      "name": "knife"
+    },
+    {
+      "id": 6,
+      "name": "meat_platter"
+    },
+    {
+      "id": 7,
+      "name": "napkin"
+    },
+    {
+      "id": 8,
+      "name": "person"
+    },
+    {
+      "id": 9,
+      "name": "pizza"
+    },
+    {
+      "id": 10,
+      "name": "plate"
+    },
+    {
+      "id": 11,
+      "name": "salad"
+    },
+    {
+      "id": 12,
+      "name": "sauce bowl"
+    },
+    {
+      "id": 13,
+      "name": "smartphone"
+    },
+    {
+      "id": 14,
+      "name": "soup"
+    },
+    {
+      "id": 15,
+      "name": "spoon"
+    },
+    {
+      "id": 16,
+      "name": "tea_pot"
+    },
+    {
+      "id": 17,
+      "name": "wine glass"
+    },
+    {
+      "id": 18,
+      "name": "clock"
+    },
+    {
+      "id": 19,
+      "name": "scissors"
+    }
+  ],
+  "info": {
+    "year": 2025,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}

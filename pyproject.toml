@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "yolov11-assignment"
+version = "0.1.0"
+description = ""
+authors = ["leshad <lesha.denis@external.t-mobile.at>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ultralytics = "^8.3.158"
+opencv-python = "^4.11.0.86"
+scikit-learn = "^1.7.0"
+torch = {version = "^2.7.1+cu126", source = "pytorch"}
+torchvision = {version = "^0.22.1+cu126", source = "pytorch"}
+torchaudio = {version = "^2.7.1+cu126", source = "pytorch"}
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu126"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

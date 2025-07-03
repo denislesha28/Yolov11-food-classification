@@ -1,0 +1,26 @@
+path: ../preprocessing/food_dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: bowl
+  1: bread
+  2: cup
+  3: fork
+  4: glass
+  5: knife
+  6: meat_platter
+  7: napkin
+  8: person
+  9: pizza
+  10: plate
+  11: salad
+  12: sauce bowl
+  13: smartphone
+  14: soup
+  15: spoon
+  16: tea_pot
+  17: wine glass
+  18: clock
+  19: scissors
