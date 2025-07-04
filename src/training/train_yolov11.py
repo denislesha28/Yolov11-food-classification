@@ -69,8 +69,8 @@ def explore_best_hyperparams():
 
 
 def eval_test_set():
-    model = YOLO("../../runs/detect/train15/weights/best.pt")
-    test_results = model.val(
+    model = YOLO("../../runs/detect/train/weights/best.pt")
+    model.val(
         data="../preprocessing/food_dataset/dataset.yaml",
         split="test",
         batch=8,

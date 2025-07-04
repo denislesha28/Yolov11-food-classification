@@ -3,8 +3,8 @@ import cv2
 
 
 def main():
-    model = YOLO("../runs/detect/train15/weights/best.pt")
-    video_path = "../dataset/3_1.MOV"
+    model = YOLO("../runs/detect/train/weights/best.pt")
+    video_path = "../dataset/2_1.MOV"
     cap = cv2.VideoCapture(video_path)
 
     original_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))

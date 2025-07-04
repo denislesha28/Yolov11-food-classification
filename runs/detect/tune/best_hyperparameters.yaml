@@ -1,0 +1,24 @@
+# 30/30 iterations complete ✅ (4470.12s)
+# Results saved to D:\Denisovich\Yolov11-food-classification\runs\detect\tune
+# Best fitness=0.6546 observed at iteration 13
+# Best fitness metrics are {'metrics/precision(B)': 0.67674, 'metrics/recall(B)': 0.95461, 'metrics/mAP50(B)': 0.89722, 'metrics/mAP50-95(B)': 0.62765, 'val/box_loss': 1.36417, 'val/cls_loss': 1.0909, 'val/dfl_loss': 1.65665, 'fitness': 0.6546}
+# Best fitness model is D:\Denisovich\Yolov11-food-classification\runs\detect\train15
+# Best fitness hyperparameters are printed below.
+
+lr0: 0.0015
+lrf: 0.01
+momentum: 0.92
+weight_decay: 0.00054
+warmup_epochs: 2.97198
+box: 8.0
+cls: 0.51254
+dfl: 1.6
+mixup: 0.08
+degrees: 1.0
+translate: 0.02382
+scale: 0.12
+hsv_v: 0.22092
+hsv_s: 0.11943
+mosaic: 1.0
+fliplr: 0.0
+hsv_h: 0.0
