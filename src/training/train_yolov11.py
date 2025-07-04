@@ -33,6 +33,7 @@ def train_fixed_hyperparam():
 
 
 def explore_best_hyperparams():
+    # define search space exploration for hyperparam tuning
     search_space = {
         'lr0': (0.0007, 0.0015),
         'lrf': (0.01, 0.03),

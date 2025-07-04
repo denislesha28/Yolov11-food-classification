@@ -17,9 +17,11 @@ def main():
     print(f"Original: {original_width}x{original_height}")
     print(f"Display: {display_width}x{display_height}")
 
+    # read frames and scale according to display size
     while cap.isOpened():
         success, frame = cap.read()
         if success:
+            # run model prediction
             results = model(frame, conf=0.1, iou=0.6, imgsz=1280)
             annotated_frame = results[0].plot()
             resized_frame = cv2.resize(annotated_frame, (display_width, display_height))

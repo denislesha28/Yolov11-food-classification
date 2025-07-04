@@ -3,6 +3,7 @@ import os
 
 
 def create_labeled_dataset():
+    """This method deletes images that are not annotated from the dataset directory"""
     print('Creating labeled dataset from manually labeled data...')
     images_dir = Path("food_dataset/images")
     annotations_dir = Path("food_dataset/labels")

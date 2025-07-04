@@ -8,6 +8,8 @@ from ultralytics import YOLO
 
 
 class FrameExtractor:
+    """Frame Extractor is used for frame and extraction and initial baseline annotation"""
+
     def __init__(self, video_path: str, output_dir="label_studio_data"):
         self.video_path = video_path
         self.output_dir = Path(output_dir)
@@ -21,11 +23,12 @@ class FrameExtractor:
     def extract_frames(self):
         if len(os.listdir(self.frames_dir)) == 0:
             for path in Path(self.video_path).rglob("*.MOV"):
-                self.extract_frames_from_video(path)
-        self.batch_yolo_inference()
-        self.generate_label_studio_files()
+                self.__extract_frames_from_video(path)
+        self.__batch_yolo_inference()
+        self.__generate_label_studio_files()
 
-    def batch_yolo_inference(self, model_name='yolo11s.pt', batch_size=16, confidence_threshold=0.3):
+    def __batch_yolo_inference(self, model_name='yolo11s.pt', batch_size=16, confidence_threshold=0.3):
+        """This method takes a frame as input and creates a baseline annotation using yolo11s"""
         print("Frame Labeling...")
 
         model = YOLO(model_name)
@@ -46,6 +49,7 @@ class FrameExtractor:
         self._save_classes_file()
 
     def _save_yolo_annotation(self, result, frame_name):
+        """This method saves a annotation in .txt format for each corresponding image frame"""
         annotation_file = self.annotations_dir / f"{frame_name}.txt"
 
         if result.boxes is not None:
@@ -65,7 +69,8 @@ class FrameExtractor:
             for class_name in self.class_names:
                 f.write(f"{class_name}\n")
 
-    def extract_frames_from_video(self, path, frame_interval=30, max_frames=None):
+    def __extract_frames_from_video(self, path, frame_interval=30, max_frames=None):
+        """Ths method handles frame extraction via opencv and extracts frames according to video frame rate"""
         print("Extracting frames...")
 
         cap = cv2.VideoCapture(str(path))
@@ -109,7 +114,9 @@ class FrameExtractor:
         print(f"Extracted {saved_count} frames to {self.frames_dir}")
         return saved_count
 
-    def generate_label_studio_files(self):
+    def __generate_label_studio_files(self):
+        """This method generates an appropriate format for importing baseline annotations
+        into label studio for correction / enhancements"""
         try:
             output_json = self.output_dir / "import.json"
             cmd = [

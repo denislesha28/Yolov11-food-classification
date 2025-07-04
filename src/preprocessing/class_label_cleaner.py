@@ -8,6 +8,9 @@ NOTES_JSON = "food_dataset/notes.json"
 
 
 def main():
+    """This methods iterates through classification categories and
+    fixes numerical ranking to start from 0 and up if broken"""
+
     used_classes = set()
     labels_path = Path(LABELS_DIR)
 
