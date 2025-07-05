@@ -3,3 +3,4 @@ src/preprocessing/label_studio_data/*
 assignment.md
 poetry.lock
 .venv
+runs/detect/inference

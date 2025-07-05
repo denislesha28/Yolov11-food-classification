@@ -105,6 +105,9 @@ hsv_h: 0.0
 
 ## Results - Written Report 1.5h
 
+#### Result videos are found under `runs/detect/inference` if manually executed or online via: 
+https://drive.google.com/drive/folders/1G9evDlqd-47tWckRhmL1GGGDmA7ASizP?usp=sharing
+
 ### Manually Fine-Tuned YOLO11s Model
 
 <img src="./final_report_images/manual_model/BoxF1_curve.png" width="600" style="display: block; margin: 10px 0;">
